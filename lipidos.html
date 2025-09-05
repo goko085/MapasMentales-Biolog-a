@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"Lipidos","children":[{"content":"Compuestos principalmente por...","children":[{"content":"Carbono, hidr&#xf3;geno y en menor medida ox&#xed;geno","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"Tambi&#xe9;n pueden contener fosforo, azufre y nitr&#xf3;geno","children":[],"payload":{"tag":"li","lines":"4,6"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"Funciones principales","children":[{"content":"Reserva energ&#xe9;tica","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"Componente de membranas celulares","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Transporte","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"Hormonas","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Regulaci&#xf3;n","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Comunicaci&#xf3;n celular","children":[],"payload":{"tag":"li","lines":"12,14"}}],"payload":{"tag":"h2","lines":"6,7"}},{"content":"Caracter&#xed;sticas","children":[{"content":"No forman pol&#xed;meros","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"No poseen carga","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Representan un grupo heterog&#xe9;neo","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"Insolubles en agua (Hidrof&#xf3;bicos)","children":[],"payload":{"tag":"li","lines":"18,20"}}],"payload":{"tag":"h2","lines":"14,15"}},{"content":"Clasificaci&#xf3;n","children":[{"content":"Simples","children":[{"content":"&#xc1;cidos grasos","children":[{"content":"Largas cadenas hidrocarbonadas<br>\n(De Carbono e Hidr&#xf3;geno)","children":[],"payload":{"tag":"li","lines":"23,25"}},{"content":"Saturados","children":[{"content":"Sin dobles enlaces","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"Solidos a temperatura ambiente","children":[],"payload":{"tag":"li","lines":"27,28"}}],"payload":{"tag":"li","lines":"25,28"}},{"content":"Insaturados","children":[{"content":"Uno o mas enlaces dobles","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"L&#xed;quidos a temperatura ambiente","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"li","lines":"28,31"}}],"payload":{"tag":"li","lines":"22,31"}},{"content":"Grasas Neutras (Triglic&#xe9;rido)","children":[{"content":"Estructura","children":[{"content":"1 Mol&#xe9;cula de glicerol","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"3 Mol&#xe9;culas de &#xe1;cidos grasos","children":[],"payload":{"tag":"li","lines":"34,35"}}],"payload":{"tag":"li","lines":"32,35"}},{"content":"Funciones","children":[{"content":"Aislante t&#xe9;rmico y termorregulador<br>\n(Evita transpiraci&#xf3;n)","children":[],"payload":{"tag":"li","lines":"36,38"}},{"content":"Material de reserva energ&#xe9;tica","children":[],"payload":{"tag":"li","lines":"38,39"}}],"payload":{"tag":"li","lines":"35,39"}}],"payload":{"tag":"li","lines":"31,39"}},{"content":"Ceras","children":[],"payload":{"tag":"li","lines":"39,40"}}],"payload":{"tag":"h3","lines":"21,22"}},{"content":"Complejos","children":[{"content":"Fosfoglic&#xe9;ridos","children":[{"content":"Estructura","children":[{"content":"Parte hidrof&#xf3;bica","children":[{"content":"1 Glicerol","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"2 &#xc1;cidos grasos (Colas no polares)","children":[],"payload":{"tag":"li","lines":"45,46"}}],"payload":{"tag":"li","lines":"43,46"}},{"content":"Parte hidrof&#xed;lica","children":[{"content":"Grupo fosfato","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"Cadena variable (R)","children":[],"payload":{"tag":"li","lines":"48,49"}}],"payload":{"tag":"li","lines":"46,49"}}],"payload":{"tag":"li","lines":"42,49"}},{"content":"Funciones","children":[{"content":"Forman barreras selectivas<br>\n(Membranas)","children":[],"payload":{"tag":"li","lines":"50,52"}},{"content":"Componen las vainas de<br>\nmielina en neuronas","children":[],"payload":{"tag":"li","lines":"52,54"}}],"payload":{"tag":"li","lines":"49,54"}}],"payload":{"tag":"li","lines":"41,54"}},{"content":"Glucol&#xed;pidos","children":[{"content":"Complejo de grasas y az&#xfa;cares","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"Cumplen funciones<br>\nprotectoras de enzimas","children":[],"payload":{"tag":"li","lines":"56,58"}},{"content":"Cargados negativamente<br>\n(Atraidos por iones positivos)","children":[],"payload":{"tag":"li","lines":"58,60"}},{"content":"Tipos","children":[{"content":"-Cerebr&#xf3;sidos<br>\n-Glob&#xf3;sidos","children":[{"content":"Esfingol&#xed;pidos<br>\n(Se encuentran en<br>\nmembranas celulares)","children":[],"payload":{"tag":"li","lines":"63,66"}}],"payload":{"tag":"li","lines":"61,66"}},{"content":"Gangli&#xf3;sidos","children":[],"payload":{"tag":"li","lines":"66,67"}}],"payload":{"tag":"li","lines":"60,67"}}],"payload":{"tag":"li","lines":"54,67"}},{"content":"Lipoprote&#xed;nas","children":[{"content":"Clasificaci&#xf3;n (Densidad)","children":[{"content":"Alta (HDL)","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"Intermedia (IDL)","children":[],"payload":{"tag":"li","lines":"70,71"}},{"content":"Baja (LDL)","children":[],"payload":{"tag":"li","lines":"71,72"}},{"content":"Muy baja (VLDL)","children":[],"payload":{"tag":"li","lines":"72,73"}},{"content":"Quilomicrones<br>\n(Las menos densas)","children":[],"payload":{"tag":"li","lines":"73,75"}}],"payload":{"tag":"li","lines":"68,75"}}],"payload":{"tag":"li","lines":"67,75"}}],"payload":{"tag":"h3","lines":"40,41"}},{"content":"Asociados","children":[{"content":"Prostaglandinas","children":[],"payload":{"tag":"li","lines":"76,77"}},{"content":"Terpenos","children":[],"payload":{"tag":"li","lines":"77,78"}},{"content":"Esteroides","children":[{"content":"Fuciones","children":[{"content":"Hormonales","children":[],"payload":{"tag":"li","lines":"80,81"}},{"content":"Mantener la fluidez de la membrana plasm&#xe1;tica<br>\n(Evitan que los Fosfol&#xed;pidos se empaqueten por<br>\ncontacto)","children":[],"payload":{"tag":"li","lines":"81,86"}}],"payload":{"tag":"li","lines":"79,86"}}],"payload":{"tag":"li","lines":"78,86"}}],"payload":{"tag":"h3","lines":"75,76"}}],"payload":{"tag":"h2","lines":"20,21"}},{"content":"Estructuras","children":[{"content":"Membranas","children":[],"payload":{"tag":"li","lines":"87,88"}},{"content":"Ves&#xed;culas, liposomas y<br>\norganelos","children":[],"payload":{"tag":"li","lines":"88,90"}},{"content":"Hormonas","children":[],"payload":{"tag":"li","lines":"90,91"}},{"content":"Mol&#xe9;culas de<br>\nalmacenamiento","children":[],"payload":{"tag":"li","lines":"91,94"}}],"payload":{"tag":"h2","lines":"86,87"}},{"content":"Funci&#xf3;n de l&#xed;pidos","children":[{"content":"Funci&#xf3;n de<br>\nreserva","children":[{"content":"Triglic&#xe9;ridos","children":[],"payload":{"tag":"li","lines":"97,98"}}],"payload":{"tag":"li","lines":"95,98"}},{"content":"Funci&#xf3;n estructural","children":[{"content":"Fosfol&#xed;pidos","children":[],"payload":{"tag":"li","lines":"99,100"}},{"content":"Glucol&#xed;pidos","children":[],"payload":{"tag":"li","lines":"100,101"}},{"content":"Colesterol","children":[],"payload":{"tag":"li","lines":"101,102"}}],"payload":{"tag":"li","lines":"98,102"}},{"content":"Funci&#xf3;n transportadora","children":[{"content":"&#xc1;cidos biliares","children":[],"payload":{"tag":"li","lines":"103,104"}},{"content":"Lipoprote&#xed;nas","children":[],"payload":{"tag":"li","lines":"104,105"}}],"payload":{"tag":"li","lines":"102,105"}}],"payload":{"tag":"h2","lines":"94,95"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
